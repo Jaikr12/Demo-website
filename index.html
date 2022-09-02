@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -27,23 +28,23 @@
     <h2>container</h2>
     <h3>fluid container</h3>
     
-    <div>This is fluid container and it will go till the end of the page</div>
+    <div class=" container ">This is fluid container and it will go till the end of the page</div>
     
     <h3>center container</h3>
-    <div>This is center conatiner and it will go till the specified width </div>
+    <div class="container container-center">This is center conatiner and it will go till the specified width </div>
     
     <hr>
     
     <h2>@links</h2>
-    <a href="/">Primary link</a>
-    <a href="/">Secondary link</a>
+    <a class="link link-primary" href="/">Primary link</a>
+    <a class="link link-secondary" href="/">Secondary link</a>
     
     <hr>
 
     <h2>@lists</h2>
     <h3>unordered list</h3>
     
-    <ul>
+    <ul class="list-non-bullet">
 
         <li>Item one </li>
         <li>Item Two</li>
@@ -51,13 +52,13 @@
 
     </ul>
     <h3>Unorderd inline list</h3>
-    <ul>
-        <li>Inline item one </li>
-        <li>Inline item two</li>
-        <li>Inline item three</li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Inline item one </li>
+        <li class="list-item-inline">Inline item two</li>
+        <li class="list-item-inline">Inline item three</li>
     </ul>
     <h3>reversed ordered list</h3>
-    <ol>
+    <ol reversed>
         <li>milk</li>
         <li>eggs</li>
         <li>break</li>
@@ -66,44 +67,49 @@
     <hr>
 
     <h2>@nav</h2>
-    <div>i am brand</div>
+    <nav class="navigation container">
+    <div class="nav-brand">i am brand</div>
 
-    <ul>
-        <li><a href="/">home</a></li>
-        <li><a href="/">product</a></li>
-        <li><a href="/">about</a></li>
+    <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline"><a class="link link-active" href="/">home</a></li>
+        <li class="list-item-inline"><a class="link" href="/">product</a></li>
+        <li class="list-item-inline"><a class="link" href="/">about</a></li>
     </ul>
-
+    </nav>
     <hr>
 
-    <h2>header</h2>
-    <header>
-        <img src="javscrpt.svg" alt="image of a person">
-        <h1>heading inside hero</h1>
+    <h2>@header</h2>
+    <header class="hero">
+        <img class="hero-img" src="javscrpt.svg" alt="image of a person">
+        <h1 class="hero-heading">Jai kumar the <span class="main">web developer</span></h1>
     </header>
 
     <hr>
 
     <h2>@section</h2>
-    <section>
-        <h3>white section</h3>
+    <section class="section">
+        <div class="container container-center ">
+        <h1>white section</h1>
         <p>This will be white background</p>
+    </div>
     </section>
 
-    <section>
-        <h2>off white section</h2>
+    <section class="section ow">
+        <div class="container container-center">
+        <h1>off white section</h1>
         <p>This will be a gray background</p>
+    </div>
     </section>
 
     <hr>
     
     <h2>@footer</h2>
-    <footer>
-        <div>some small heading inside footer</div>
-        <ul>
-            <li>social one </li>
-            <li>social two</li>
-            <li>social three</li>
+    <footer class="footer">
+        <div class="footer-header">some small heading inside footer</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline"> <a class="link" href="/">social one</a> </li>
+            <li class="list-item-inline"><a class="link" href="/">social two</a></li>
+            <li class="list-item-inline"><a class="link" href="/">social three</a></li>
         </ul>
     </footer>
 
